@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Contact List</title>
+</head>
+<body onLoad="displayContacts(contacts)">
+
+    <table id="container">
+        <thead>
+            <tr>
+                <td>
+                <h2>Contacts</h2>
+                </td>
+            </tr>
+        </thead>
+
+        <tbody id="contactTable">
+        <!--contact info will go here through scripts.js-->
+           
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td>
+              <select onChange="displayByEmail(contacts)" id="select">
+                <option value="phone">Phone number</option>
+                <option value="email">Email address</option>
+                
+                </select>
+            </td>
+          </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    margin: 0px;
+	padding: 0px;
+	border: 0px;
+	
+	
+}
+
+table {
+    width: 420px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #272727;
+    color: white;
+    font-size: 14px;
+    overflow: hidden;
+    border-radius: 20px;
+    font-family: "Helvetica", sans-serif;
+    letter-spacing:0.05em;  
+  }
+
+  tbody  { 
+    font-weight: 400;
+}
+
+  tbody > tr:nth-of-type(even) {
+    background-color: #1a1a1a;  
+}
+
+
+
+  tbody > tr:nth-of-type(odd):hover {
+    background-color: #484848;
+}
+
+tbody > tr:nth-of-type(even):hover {
+    background-color: #484848;
+}
+
+select{
+  width: 70%;
+  float: right;
+  margin-right: 10%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+td{
+    padding: 4%;
+  }
+  
+  .hide{
+    display: none;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+tr:hover .hide{
+  display: block;
+  font-size: 0.75em;
+  animation: fadeIn 3.5s;
+}
+
+tr:hover .block{
+  display: block;
+  font-size: 0.75em;
+  animation: fadeIn 1.5s;
+  color:#00f6ff;
+  text-decoration: underline;
+  
+}
+
+
+
+
+  /* Smaller Screens */
+
+@media screen and (max-width: 800px) {
+    table{
+      width: 70%;
+      height: 70%;
+      font-size: 1.3em;
+      
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    table{
+      width: 50%;
+      height: 50%;
+      font-size: 1em;
+      
+      
+    }
+  }
